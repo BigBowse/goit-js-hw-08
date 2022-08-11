@@ -6,7 +6,6 @@ const STORAGE_KEY = 'feedback-form-state';
 const savedMessage = localStorage.getItem(STORAGE_KEY);
 let formData = JSON.parse(savedMessage) ?? {};
 const keys = Object.keys(formData);
-console.log(keys);
 
 function onFormSubmit(e) {
     e.preventDefault();
